@@ -9,7 +9,8 @@ resource "aws_internet_gateway" "secure-igw" {
 
 # Create an Elastic IP address
 resource "aws_eip" "ngw-eip" {
-    vpc = true
+    domain = "vpc"
+    #vpc = true
 }
 
 # Create a NAT gateway and associate it with an Elastic IP and a public subnet

@@ -17,7 +17,7 @@ resource "aws_security_group" "lt-sg" {
         from_port = var.ssh_port
         to_port = var.ssh_port
         protocol = "tcp"
-        security_group = [aws_security_group.alb-sg.id]
+        security_groups = [aws_security_group.alb-sg.id]
     }
 
     # Outbound Rules
@@ -37,8 +37,8 @@ resource "aws_autoscaling_group" "asg" {
     min_size              = var.asg_min
     max_size              = var.asg_max
     desired_capacity      = var.asg_des_cap
-    vpc_zone_identifier   = [aws_subnet.prvsub1.id, aws_subnet.privsub2.id]
-    lunch_template {
+    vpc_zone_identifier   = [aws_subnet.privsub1.id, aws_subnet.privsub2.id]
+    launch_template {
         id = aws_launch_template.lt-asg.id
     }
     tag {
@@ -55,7 +55,7 @@ resource "aws_launch_template" "lt-asg" {
     instance_type            = var.lt_asg_instance_type
     key_name                 = var.lt_asg_key
     vpc_security_group_ids   = [aws_security_group.lt-sg.id]
-    user_data                = filebase64("{path.root}/install-apache.sh")
+    user_data                = filebase64("bash.sh")
 }
 
 # Attach the autoscaling group to the target group of the ALB

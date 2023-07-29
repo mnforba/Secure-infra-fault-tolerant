@@ -17,4 +17,4 @@ amazon-linux-extras install epel -y
 yum install stress -y
 
 #Adds our custom webpage html code to "index.html" file.
-echo "<html><body><h1>LUIT Gold Team 2023!</h1></body><html>" > /var/www/html/index.html
+echo "<html><body><h1>DevOpS Savvy Gold Team 2023!</h1></body><html>" > /var/www/html/index.html
