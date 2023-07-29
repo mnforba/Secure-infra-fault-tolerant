@@ -74,15 +74,9 @@ A client needs to handle a surge in traffic. The client wants to insure that the
 So, now our entire code is ready. We need to run the below steps to create infrastructure.
 
 * `terraform init` is to initialize the working directory and downloading plugins of the provider,
-<img src="https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/e6d039a4-b588-4008-9c04-725453273d3e" width="15%"></img> 
 * `terraform validate` to validate our code base to ensure no syntax errors in our code
-![Alt text](image-1.png)
 * `terraform plan` is to create the execution plan for our code
-![Alt text](image-2.png)
-![Alt text](image-3.png)
 * `terraform apply` is to create the actual infrastructure.
-![Alt text](image-4.png) 
-
 
 **Step 13:- Verify the resources**
 
