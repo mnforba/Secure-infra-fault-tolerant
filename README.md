@@ -73,7 +73,9 @@ A client needs to handle a surge in traffic. The client wants to insure that the
 
 So, now our entire code is ready. We need to run the below steps to create infrastructure.
 
+
 * `terraform init` is to initialize the working directory and downloading plugins of the provider,
+![init](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/0ca95467-3afd-4e21-9578-ac8b93018642)
 * `terraform validate` to validate our code base to ensure no syntax errors in our code
 * `terraform plan` is to create the execution plan for our code
 * `terraform apply` is to create the actual infrastructure.
