@@ -21,7 +21,6 @@ A client needs to handle a surge in traffic. The client wants to insure that the
 * IDE
 * AWS Access & Secret Key
 
-> In this project, I have used some variables also that I will discuss later in this article.
 > You can clone or fork this repository to your local and use the code from [mnforba](https://github.com/mnforba/Secure-infra-fault-tolerant). 
 
 **Step 1:- Configure the Environment**
