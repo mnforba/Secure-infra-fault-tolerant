@@ -74,9 +74,14 @@ A client needs to handle a surge in traffic. The client wants to insure that the
 So, now our entire code is ready. We need to run the below steps to create infrastructure.
 
 * `terraform init` is to initialize the working directory and downloading plugins of the provider,
+![Alt text](image.png)
 * `terraform validate` to validate our code base to ensure no syntax errors in our code
+![Alt text](image-1.png)
 * `terraform plan` is to create the execution plan for our code
-* `terraform apply` is to create the actual infrastructure. 
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+* `terraform apply` is to create the actual infrastructure.
+![Alt text](image-4.png) 
 
 
 **Step 13:- Verify the resources**
