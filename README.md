@@ -1,5 +1,6 @@
 # Secure-infra-fault-tolerant
 Using terraform to deploy an auto scaling group and application load balancer for high availability and scalability
+            ![aws](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/f1090ede-2334-4b04-bf4b-7df8747ddbbe)
 
 ### What is Terraform?
 
@@ -76,9 +77,14 @@ So, now our entire code is ready. We need to run the below steps to create infra
 
 * `terraform init` is to initialize the working directory and downloading plugins of the provider,
 ![init](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/0ca95467-3afd-4e21-9578-ac8b93018642)
+
 * `terraform validate` to validate our code base to ensure no syntax errors in our code
+![validate](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/92b4467f-1ea0-427c-bcd0-ba7f757e3186)
 * `terraform plan` is to create the execution plan for our code
+![plan1](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/257ea82c-b120-422b-8557-3272f038af06)
+![plan2](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/0a1afeb5-5f82-455a-95dc-6d5025e12a30)
 * `terraform apply` is to create the actual infrastructure.
+![apply](https://github.com/mnforba/Secure-infra-fault-tolerant/assets/88167119/f73adfe7-2907-40f2-9d1a-9ccefddf920b)
 
 **Step 13:- Verify the resources**
 
